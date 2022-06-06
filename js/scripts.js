@@ -7,9 +7,10 @@ $(document).ready(function() {
     suitArray.forEach(function(suit) {
       numberArray.forEach(function(number){
         deck.push(number + "of" + suit);
-        $("#output").append(deck.toString());
       });
     }); 
+    deck.forEach(function(card) {
+      $("#output").append("<li>" + deck.toString().split(",") +"</li>");
+    });
   });
-
 });
