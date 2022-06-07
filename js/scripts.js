@@ -9,8 +9,9 @@ $(document).ready(function() {
       numberArray.forEach(function(number){
         deck.push(number + " of " + suit);
         $("#output").append("<li>" + deck.toString().split(",").pop() + "</li>");
+        /*had to have submit in a form and output in separate div
+        .toString() then .split(",") to remove commas between elements then .pop() to separate each element in deck[]*/
       });
     }); 
-
   });
 });
